@@ -75,6 +75,14 @@ img {
     overflow: hidden;
 }
 
+/** Border for buttons and links */
+button,
+.customer-item {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
 /** Style for header */
 header {
     border-bottom: 1px solid var(--accent-color);
@@ -188,6 +196,17 @@ header {
     flex-basis: calc((100% - 72px)/4);
 }
 
+.features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 4px;
+    background-color: var(--light-color);
+}
+
 /** Work section */
 .work {
     padding-top: 0;
@@ -225,10 +244,74 @@ header {
     background-color: var(--white-background-color);
 }
 
+.team-text {
+    margin-bottom: 8px;
+}
+
 /** Padding for cards in team section */
 .team-card {
     padding-top: 32px;
+    padding-right: 16px;
     padding-bottom: 32px;
+    padding-left: 16px;
+}
+
+/** Style for socials in team cards */
+.social-list {
+    display: flex;
+    gap: 24px;
+}
+
+.social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--primary-brand-color);
+}
+
+/** Hover and focus for socials in team section */
+.social-item:hover,
+.social-item:focus {
+    background-color: var(--pressed-state-color)
+}
+
+.social-link {
+    display: flex;
+}
+
+.social-icon {
+    fill: var(--light-color);
+}
+
+/** Customers section */
+
+.customer-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.customer-item {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    flex-basis: calc((100% - 72px)/6);
+    border-color: var(--subtle-text-color);
+}
+
+.customer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer-icon {
+    display: flex;
+    fill: var(--subtle-text-color);
 }
 
 /** Filter section */
@@ -279,9 +362,6 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    cursor: pointer;
-    border: 1px solid transparent;
-    border-radius: 4px;
 }
 
 /** Button in hero section */
@@ -339,7 +419,8 @@ button {
 /** Header 2 */
 .features-title,
 .work-title,
-.team-title {
+.team-title,
+.customer-title {
     margin-bottom: 72px;
 
     font-weight: 700;
