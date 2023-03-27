@@ -131,10 +131,8 @@ img {
     overflow: hidden;
 }
 
-/** Border for buttons and items */
-button,
-.customer-item {
-    cursor: pointer;
+/** Border for buttons and links */
+button {
     border: 1px solid transparent;
     border-radius: 4px;
 }
@@ -149,7 +147,7 @@ button {
 }
 
 /** Style for socials in team and footer section  */
-.social-item {
+.social-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,11 +158,6 @@ button {
     background-color: var(--primary-brand-color);
 }
 
-/** Flex for socail links */
-.social-link {
-    display: flex;
-}
-
 /** Color for social icons */
 .social-icon {
     fill: var(--light-color);
@@ -173,6 +166,7 @@ button {
 /**=============== Header section ===============*/
 header {
     border-bottom: 1px solid var(--accent-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /** Logo style in the header */
@@ -246,7 +240,9 @@ header {
 
 /**=============== Hero section ===============*/
 .hero {
-    display: flex;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 188px;
     padding-bottom: 188px;
 
@@ -361,8 +357,8 @@ header {
 }
 
 /** Hover and focus for socials in team section */
-.social-item.social-team:hover,
-.social-item.social-team:focus {
+.social-link.social-team:hover,
+.social-link.social-team:focus {
     background-color: var(--pressed-state-color)
 }
 
@@ -374,16 +370,24 @@ header {
 }
 
 .customer-item {
-    padding-top: 16px;
-    padding-bottom: 16px;
     flex-basis: calc((100% - 72px)/6);
-    border-color: var(--subtle-text-color);
 }
 
 .customer-link {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 1px solid var(--subtle-text-color);
+    border-radius: 4px;
+}
+
+/** Hover and focus for border in customers section */
+.customer-link:hover,
+.customer-link:focus {
+    border-color: var(--pressed-state-color);
 }
 
 .customer-icon {
@@ -391,14 +395,9 @@ header {
     fill: var(--subtle-text-color);
 }
 
-/** Hover and focus for socials in team section */
-.customer-item:hover,
-.customer-item:focus {
-    border-color: var(--pressed-state-color);
-}
-
-.customer-item:hover .customer-icon,
-.customer-item:focus .customer-icon {
+/** Hover and focus for icons in customers section */
+.customer-link:hover .customer-icon,
+.customer-link:focus .customer-icon {
     fill: var(--pressed-state-color);
 }
 
@@ -445,16 +444,16 @@ header {
     border-radius: 0px 0px 4px 4px;
 }
 
-/** Hover and focus for socials in filter section */
-.category-item:hover,
-.category-item:focus {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
 .category-link {
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+/** Hover and focus for socials in filter section */
+.category-link:hover,
+.category-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .category-card {
@@ -521,7 +520,7 @@ header {
 }
 
 /** Hover and focus for socials in footer section */
-.social-item.social-footer:hover,
-.social-item.social-footer:focus {
+.social-link.social-footer:hover,
+.social-link.social-footer:focus {
     background-color: var(--success-color)
 }
