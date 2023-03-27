@@ -55,352 +55,7 @@ img {
     display: block;
 }
 
-/** Additional class for sections  */
-.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-/** Additional hidden class  */
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-/** Border for buttons and links */
-button,
-.customer-item {
-    cursor: pointer;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
-
-/** Style for header */
-header {
-    border-bottom: 1px solid var(--accent-color);
-}
-
-/** Logo style in the header */
-.logo-link {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--primary-brand-color);
-}
-
-.header .logo-link {
-    margin-right: 76px;
-}
-
-/** Color header logo for tag span */
-.header-span {
-    color: var(--dark-color);
-}
-
-/** Color footer logo for tag span */
-.footer-span {
-    color: var(--light-color);
-}
-
-/** Navigation style */
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header-nav {
-    display: flex;
-    align-items: center;
-}
-
-.nav-list {
-    display: flex;
-    gap: 40px;
-}
-
-.nav-link {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--dark-color);
-}
-
-/** Contacts style */
-.contacts-list {
-    display: flex;
-    gap: 40px;
-}
-
-.contact-link {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-/** Hover and focus for header */
-.nav-link:hover,
-.nav-link:focus,
-.contact-link:hover,
-.contact-link:focus {
-    color: var(--pressed-state-color);
-}
-
-/** Hero section */
-.hero {
-    display: flex;
-    padding-top: 188px;
-    padding-bottom: 188px;
-
-    background-color: var(--dark-color);
-    background-image: linear-gradient(to right,
-            var(--hero-background-color),
-            var(--hero-background-color)),
-        url(../images/hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.hero>.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/** Features section */
-.features-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-}
-
-.features-item {
-    flex-basis: calc((100% - 72px)/4);
-}
-
-.features-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-radius: 4px;
-    background-color: var(--light-color);
-}
-
-/** Work section */
-.work {
-    padding-top: 0;
-}
-
-.work-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-}
-
-.work-item {
-    flex-basis: calc((100% - 48px)/3);
-}
-
-/** Team section */
-.team {
-    background-color: var(--light-color);
-}
-
-/** Style for cards in team section */
-.team-list {
-    display: flex;
-    gap: 24px;
-}
-
-.team-item {
-    height: 100%;
-    flex-grow: 1;
-    text-align: center;
-    flex-basis: calc((100% - 72px)/4);
-
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    background-color: var(--white-background-color);
-}
-
-.team-text {
-    margin-bottom: 8px;
-}
-
-/** Padding for cards in team section */
-.team-card {
-    padding-top: 32px;
-    padding-right: 16px;
-    padding-bottom: 32px;
-    padding-left: 16px;
-}
-
-/** Style for socials in team cards */
-.social-list {
-    display: flex;
-    gap: 24px;
-}
-
-.social-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: var(--primary-brand-color);
-}
-
-/** Hover and focus for socials in team section */
-.social-item:hover,
-.social-item:focus {
-    background-color: var(--pressed-state-color)
-}
-
-.social-link {
-    display: flex;
-}
-
-.social-icon {
-    fill: var(--light-color);
-}
-
-/** Customers section */
-
-.customer-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-}
-
-.customer-item {
-    padding-top: 16px;
-    padding-bottom: 16px;
-
-    flex-basis: calc((100% - 72px)/6);
-    border-color: var(--subtle-text-color);
-}
-
-.customer-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.customer-icon {
-    display: flex;
-    fill: var(--subtle-text-color);
-}
-
-/** Filter section */
-.filter {
-    padding-top: 96px;
-}
-
-.filter-list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 72px;
-    gap: 24px;
-}
-
-/** Style for cards in category */
-.category-list {
-    display: flex;
-    gap: 48px 24px;
-    flex-wrap: wrap;
-}
-
-.category-item {
-    flex-basis: calc((100% - 48px) / 3);
-    border-radius: 0px 0px 4px 4px;
-}
-
-.category-link {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.category-card {
-    flex-grow: 1;
-    padding-top: 32px;
-    padding-right: auto;
-    padding-bottom: 32px;
-    padding-left: 16px;
-    border-right: 1px solid var(--accent-color);
-    border-bottom: 1px solid var(--accent-color);
-    border-left: 1px solid var(--accent-color);
-}
-
-/** Style for button */
-button {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-}
-
-/** Button in hero section */
-.hero-button {
-    display: inline-block;
-    padding: 16px 32px;
-
-    min-width: 169px;
-    min-height: 56px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    background-color: var(--primary-brand-color);
-    color: var(--white-background-color);
-}
-
-/** Hover and focus for button in hero section */
-.hero-button:hover,
-.hero-button:focus {
-    background-color: var(--pressed-state-color);
-}
-
-/** Button in filter section */
-.filter-button {
-    display: inline-block;
-    padding: 12px 24px;
-
-    border-color: var(--accent-color);
-    background-color: var(--light-color);
-    color: var(--primary-brand-color);
-}
-
-/** Hover and focus for button in filter section */
-.filter-button:hover,
-.filter-button:focus {
-    border-color: transparent;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    background-color: var(--pressed-state-color);
-    color: var(--white-background-color);
-}
-
+/**=============== Text style guide ===============*/
 /** Header 1 */
 .hero-title {
     margin-bottom: 48px;
@@ -455,11 +110,381 @@ button {
     color: var(--text-color);
 }
 
+/**=============== Additional styles ===============*/
+/** Additional class for sections  */
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/** Additional hidden class  */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/** Border for buttons and items */
+button,
+.customer-item {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/** Global style for buttons */
+button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+/** Style for socials in team and footer section  */
+.social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--primary-brand-color);
+}
+
+/** Flex for socail links */
+.social-link {
+    display: flex;
+}
+
+/** Color for social icons */
+.social-icon {
+    fill: var(--light-color);
+}
+
+/**=============== Header section ===============*/
+header {
+    border-bottom: 1px solid var(--accent-color);
+}
+
+/** Logo style in the header */
+.logo-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-brand-color);
+}
+
+.header .logo-link {
+    margin-right: 76px;
+}
+
+/** Color for logo (tag span) */
+.header-span {
+    color: var(--dark-color);
+}
+
+/** Navigation style */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+}
+
+/** Contacts style */
+.contacts-list {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+/** Hover and focus for header */
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--pressed-state-color);
+}
+
+/**=============== Hero section ===============*/
+.hero {
+    display: flex;
+    padding-top: 188px;
+    padding-bottom: 188px;
+
+    background-color: var(--dark-color);
+    background-image: linear-gradient(to right,
+            var(--hero-background-color),
+            var(--hero-background-color)),
+        url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero>.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/** Button in hero section */
+.hero-button {
+    display: inline-block;
+    padding: 16px 32px;
+
+    min-width: 169px;
+    min-height: 56px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--primary-brand-color);
+    color: var(--white-background-color);
+}
+
+/** Hover and focus for button in hero section */
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--pressed-state-color);
+}
+
+/**=============== Features section ===============*/
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.features-item {
+    flex-basis: calc((100% - 72px)/4);
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 4px;
+    background-color: var(--light-color);
+}
+
+/**=============== Work section ===============*/
+.work {
+    padding-top: 0;
+}
+
+.work-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.work-item {
+    flex-basis: calc((100% - 48px)/3);
+}
+
+/**=============== Team section ===============*/
+.team {
+    background-color: var(--light-color);
+}
+
+/** Style for cards in team section */
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
+.team-item {
+    height: 100%;
+    flex-grow: 1;
+    text-align: center;
+    flex-basis: calc((100% - 72px)/4);
+
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    background-color: var(--white-background-color);
+}
+
+.team-text {
+    margin-bottom: 8px;
+}
+
+.team-card {
+    padding-top: 32px;
+    padding-right: 16px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+}
+
+.team-item .social-list {
+    display: flex;
+    gap: 24px;
+}
+
+/** Hover and focus for socials in team section */
+.social-item.social-team:hover,
+.social-item.social-team:focus {
+    background-color: var(--pressed-state-color)
+}
+
+/**=============== Customers section ===============*/
+.customer-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.customer-item {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-basis: calc((100% - 72px)/6);
+    border-color: var(--subtle-text-color);
+}
+
+.customer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer-icon {
+    display: flex;
+    fill: var(--subtle-text-color);
+}
+
+/** Hover and focus for socials in team section */
+.customer-item:hover,
+.customer-item:focus {
+    border-color: var(--pressed-state-color);
+}
+
+.customer-item:hover .customer-icon,
+.customer-item:focus .customer-icon {
+    fill: var(--pressed-state-color);
+}
+
+/**=============== Filter section ===============*/
+.filter {
+    padding-top: 96px;
+}
+
+.filter-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+    gap: 24px;
+}
+
+/** Button in filter section */
+.filter-button {
+    display: inline-block;
+    padding: 12px 24px;
+
+    border-color: var(--accent-color);
+    background-color: var(--light-color);
+    color: var(--primary-brand-color);
+}
+
+/** Hover and focus for button in filter section */
+.filter-button:hover,
+.filter-button:focus {
+    border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    background-color: var(--pressed-state-color);
+    color: var(--white-background-color);
+}
+
+/** Style for cards in category */
+.category-list {
+    display: flex;
+    gap: 48px 24px;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    flex-basis: calc((100% - 48px) / 3);
+    border-radius: 0px 0px 4px 4px;
+}
+
+/** Hover and focus for socials in filter section */
+.category-item:hover,
+.category-item:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.category-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.category-card {
+    flex-grow: 1;
+    padding-top: 32px;
+    padding-right: auto;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    border-right: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
+}
+
 /** Footer style */
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: var(--dark-color);
+}
+
+.footer-container {
+    display: flex;
+    gap: 120px;
+}
+
+/** Footer information */
+.footer-information {
+    display: flex;
+    flex-direction: column;
+    max-width: 264px;
 }
 
 /** Footer logo */
@@ -468,9 +493,35 @@ button {
     margin-bottom: 16px;
 }
 
+/** Color for logo (tag span) */
+.footer-span {
+    color: var(--light-color);
+}
+
 /** Footer slogan */
 .footer-slogan {
-    margin-right: auto;
-    max-width: 264px;
     color: var(--light-color);
+}
+
+/** Text "Social media" */
+.social-text {
+    margin-bottom: 16px;
+    color: var(--light-color);
+}
+
+/** Footer socials */
+.footer-social {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-social .social-list {
+    display: flex;
+    gap: 16px;
+}
+
+/** Hover and focus for socials in footer section */
+.social-item.social-footer:hover,
+.social-item.social-footer:focus {
+    background-color: var(--success-color)
 }
