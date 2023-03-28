@@ -131,19 +131,16 @@ img {
     overflow: hidden;
 }
 
-/** Border for buttons and links */
-button {
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
-
 /** Global style for buttons */
 button {
+    cursor: pointer;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
 /** Style for socials in team and footer section  */
@@ -265,7 +262,6 @@ header {
 
 /** Button in hero section */
 .hero-button {
-    display: inline-block;
     padding: 16px 32px;
 
     min-width: 169px;
